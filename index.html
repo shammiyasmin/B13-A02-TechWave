@@ -4,9 +4,109 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>TechWave</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <link rel="stylesheet" href="./index.css" />
     </head>
-    <body>
-        Hellow from TechWave!
+    <body class="font-inter">
+        <header class="flex flex-col bg-[#1A0B2E]">
+            <nav
+                class="flex items-center p-5 lg:px-0 lg:py-6 justify-between lg:justify-around border-b border-[#412567]"
+            >
+                <img src="./assets/logo.png" alt="Logo" class="h-5 lg:h-auto" />
+                <ul
+                    class="list-none lg:inline-flex items-center gap-8 text-white font-medium capitalize hidden"
+                >
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Episodes</a></li>
+                    <li><a href="#">Host</a></li>
+                </ul>
+                <button
+                    type="button"
+                    class="hidden bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full border-none px-5 py-3 lg:inline-flex items-center gap-2 text-white font-semibold transition-all active:scale-95 cursor-pointer"
+                >
+                    Subscribe
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="size-5"
+                    >
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </button>
+                <button type="button" class="flex border-none lg:hidden">
+                    <img
+                        src="./assets/hamburger-menu.png"
+                        alt="Menu icon"
+                        class="size-4"
+                    />
+                </button>
+            </nav>
+            <div
+                class="relative flex flex-col items-center justify-center py-10 lg:py-[102px] overflow-hidden"
+            >
+                <div
+                    class="relative flex items-center justify-center bg-no-repeat bg-contain p-16 lg:p-24 z-10 mt-6 lg:mt-2"
+                    style="background-image: url(./assets/hero-circle.png)"
+                >
+                    <p
+                        class="rounded-full text-[#1A0B2E] uppercase font-semibold bg-[#00FF88] w-max px-3 lg:px-4 py-1 lg:py-2 shadow-[0_3px_27px_0_#00ff8880] absolute top-1 lg:top-6 -right-2 lg:right-6 lg:text-lg"
+                    >
+                        new
+                    </p>
+                    <div
+                        class="flex items-center justify-center aspect-square h-10 lg:h-54"
+                    >
+                        <img src="./assets/microphone.png" alt="Microphone" />
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-2 text-center mt-6 lg:mt-10 px-4 lg:px-0 z-10"
+                >
+                    <p class="font-extrabold text-5xl lg:text-6xl text-white">
+                        TechWave
+                    </p>
+                    <p class="text-white text-wrap">
+                        Your daily dose of tech insights, productivity hacks,
+                        and personal growth
+                    </p>
+                    <div
+                        class="inline-flex items-center justify-center gap-2 mt-4"
+                    >
+                        <button
+                            class="inline-flex bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full border-none px-5 py-3 items-center gap-2 text-white font-semibold transition-all active:scale-95 cursor-pointer"
+                        >
+                            <img src="./assets/spotify.png" alt="Logo" />
+                            Listen On Spotify
+                        </button>
+                        <button
+                            type="button"
+                            class="inline-flex items-center justify-center gap-2 text-[#00FF88] border-2 bg-transparent rounded-full border-[#00FF88] px-4.5 py-2.5 transition-all active:scale-95 cursor-pointer"
+                        >
+                            <img src="./assets/message.png" alt="Logo" />
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+                <img
+                    src="./assets/hero-bg.png"
+                    alt="Header bg"
+                    class="absolute top-1/3 -translate-y-1/3 lg:top-0 left-0 w-full scale-150 lg:scale-none lg:translate-none"
+                />
+            </div>
+        </header>
     </body>
 </html>
